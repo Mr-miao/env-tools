@@ -16,17 +16,24 @@ npm install -g node-gyp
 ### 编译
 ``
 node-gyp configure clean
+``
 
+``
 node-gyp configure build
 ``
+
 ### 调试
 在``index.js``中有封装的所有可用接口，调试可以参考如下方式：
 
 ``
 node --napi-modules
+``
 
+``
 const serviceTool = require('bindings')('service_tool.node');
+``
 
+``
 serviceTool.getServiceInfo("C:\Windows\SysWOW64\vmnetdhcp.exe");
 ``
 
