@@ -1,0 +1,21 @@
+{
+  "name": "envtools",
+  "version": "1.0.0",
+  "description": "A module for environment tools",
+  "author": "Mr-Miaow",
+  "license": "MIT",
+  "private": true,
+  "main": "index.js",
+  "dependencies": {
+    "bindings": "^1.5.0"
+  },
+  "scripts": {
+    "test": "node index.js",
+    "postinstall": "node-gyp configure build"
+  },
+  "gypfile": true,
+  "devDependencies": {
+    "node-addon-api": "^7.0.0",
+    "node-gyp": "^10.0.1"
+  }
+}

@@ -1,4 +1,5 @@
-build
+.idea/
+build/
 node_modules/
 CMakeLists.txt
-release/
+cmake-build-debug/
