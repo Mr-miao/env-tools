@@ -16,6 +16,7 @@ npm install -g node-gyp
 ### 编译
 ``
 node-gyp configure clean
+
 node-gyp configure build
 ``
 ### 调试
@@ -23,8 +24,10 @@ node-gyp configure build
 
 ``
 node --napi-modules
+
 const serviceTool = require('bindings')('service_tool.node');
-serviceTool.getServiceInfo("C:\Windows\SysWOW64\vmnetdhcp.exe")
+
+serviceTool.getServiceInfo("C:\Windows\SysWOW64\vmnetdhcp.exe");
 ``
 
 ### 其他
